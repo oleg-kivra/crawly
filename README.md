@@ -85,14 +85,12 @@ historical archival.
 4. Configure Crawly
 
    By default, Crawly does not require any configuration. But obviously you will need a configuration for fine tuning the crawls:
-
+   (in config/config.exs)
+   
    ```elixir
-   # in config/config.exs
-  
-  import Config
+   import Config
 
-  # in config.exs
-  config :crawly,
+   config :crawly,
     closespider_timeout: 10,
     concurrent_requests_per_domain: 8,
     closespider_itemcount: 100,
